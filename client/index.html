@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html ng-app="applicationsTrackerApp">
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Applications tracker</title>
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap-theme.min.css"/>
+</head>
+<body>
+    <header>
+        <h1><a href="#">Applications tracker</a></h1>
+    </header>
+
+    <section class="container" ng-view></section>
+
+    <footer></footer>
+
+    <script src="bower_components/angular/angular.min.js"></script>
+    <script src="bower_components/angular-route/angular-route.min.js"></script>
+
+    <script src="js/main.js"></script>
+
+    <script src="js/model/position.js"></script>
+
+    <script src="js/services/positionsStorage.js"></script>
+
+    <script src="js/controllers/list.js"></script>
+    <script src="js/controllers/add.js"></script>
+    <script src="js/controllers/show.js"></script>
+</body>
+</html>

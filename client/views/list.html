@@ -1,0 +1,8 @@
+<table class="table-hover">
+    <tr ng-repeat="position in positions track by $index">
+        <td>
+            <a href="#/position/{{position.id}}" ng-bind="position.name()"></a>
+        </td>
+    </tr>
+</table>
+<button type="button" ng-click="addPosition()"> + </button>
